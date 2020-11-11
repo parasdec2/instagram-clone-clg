@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  height: 60px;
+  padding: 10px;
+  /* border-bottom: 1px solid black; */
+}
+
+/* .chatIconsInfo {
+  background-color: bisque;
+} */
+
+.icon {
+  display: flex;
+  height: 60px;
+  width: 60px;
+  margin-left: 0px;
+}
+
+.icon > .MuiSvgIcon-root {
+  padding: 10px;
+}
+
+.info {
+  padding: 5px;
+  flex: 1;
+  /* background-color: aqua; */
+}

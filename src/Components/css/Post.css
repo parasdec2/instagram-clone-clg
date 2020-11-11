@@ -1,0 +1,168 @@
+.post {
+  background-color: white;
+  width: 500px;
+  border: 1px solid lightgray;
+  margin-bottom: 45px;
+  border-radius: 5px;
+  /* z-index: 0; */
+}
+
+.post__image {
+  width: 500px;
+  /* object-fit: contain; */
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid gray;
+}
+
+.post__header {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+}
+
+.post__headerLeft {
+  display: flex;
+  flex: 0.9;
+  /* background-color: bisque; */
+}
+
+.post__headerLeftUsernameLink {
+  text-decoration: none;
+}
+
+.post__headerLeftUsernameLink :hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+
+.post__headerUsername {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: black;
+  /* background-color: aqua; */
+}
+
+.post__headerRight {
+  display: flex;
+  flex: 0.1;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 0;
+  background-color: transparent;
+}
+
+.post__headerRight > button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: slategray;
+  font-weight: bolder;
+  height: 40px;
+}
+
+.post__avatar {
+  margin-right: 10px;
+  margin-right: 10px;
+  z-index: 0;
+}
+
+.post__userActions {
+  /* background-color: aqua; */
+  display: flex;
+  padding: 10px;
+  padding-bottom: 0;
+}
+
+.post__actionsLeft {
+  flex: 1;
+}
+
+.post__action {
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.post__actionLike {
+  color: red;
+}
+
+.post__actionShare {
+  color: gray;
+}
+
+.post__actionBookmarks {
+  cursor: pointer;
+}
+
+.post__likesCount {
+  margin-left: 20px;
+  font-weight: 700;
+}
+
+.post__commentsCount {
+  margin-left: 20px;
+  margin-top: 5px;
+  font-weight: 300;
+  color: grey;
+  font-size: small;
+}
+
+.post__timestamp {
+  margin-left: 20px;
+  color: grey;
+  font-size: small;
+  font-style: italic;
+}
+
+.post__text {
+  font-weight: normal;
+  padding-left: 20px;
+  margin-top: 5px;
+}
+
+.post__comments {
+  margin-left: 20px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+}
+
+.post__comments > p {
+  flex: 1;
+  padding-left: 5px;
+  font-weight: normal;
+}
+
+.post__commentDelete {
+  cursor: pointer;
+}
+
+.post__commentBox {
+  display: flex;
+  margin-top: 10px;
+}
+
+.post__input {
+  flex: 1;
+  border: none;
+  padding: 10px;
+  border-top: 1px solid lightgray;
+}
+
+.post__button {
+  flex: 0;
+  border: none;
+  border-top: 1px solid lightgray;
+  background-color: transparent;
+  color: #6082a3;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .post__image {
+    width: 480px;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid gray;
+  }
+}

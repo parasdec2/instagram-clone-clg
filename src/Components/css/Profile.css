@@ -1,0 +1,273 @@
+.profile {
+  font-family: "Open Sans", Arial, sans-serif;
+  /* min-height: 100vh; */
+  background-color: #fafafa;
+  color: #262626;
+  padding-bottom: 3rem;
+  max-width: 700px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.profile__header {
+  margin: 20px;
+  display: flex;
+  height: max-content;
+  border-bottom: 1px solid black;
+}
+
+.profile__headerLeft {
+  border-radius: 999px;
+  height: max-content;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.profile__headerLeftAvatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 999rem;
+}
+
+.profile__headerRight {
+  flex: 1;
+  /* background-color: blanchedalmond; */
+  /* border: 1px solid black; */
+  margin-left: 20px;
+  padding: 20px;
+}
+
+.profile__settings {
+  display: flex;
+  flex-direction: row;
+  /* background-color: aqua; */
+  align-items: center;
+}
+
+.profile__settingsUserName {
+  flex: 0.4;
+  margin-left: 5px;
+  padding: 10px;
+  font-size: xx-large;
+}
+.profile-edit-btn {
+  font-size: 0.8rem;
+  line-height: 1.8;
+  border: 0.1rem solid #dbdbdb;
+  border-radius: 0.3rem;
+  width: 150px;
+  /* padding: 0 2.4rem; */
+  margin-left: 2rem;
+  height: 30px;
+  /* background-color: #262626; */
+}
+
+.profile-edit-btn :hover {
+  cursor: pointer;
+}
+
+.profile-settings-btn {
+  font-size: 5px;
+  margin-left: 5rem;
+  display: none;
+}
+
+.profile-settings-btn :hover {
+  cursor: pointer;
+}
+
+.profile__stats {
+  display: flex;
+  padding: 10px;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+
+.profile__statCountDiv {
+  flex: 0.3;
+}
+
+.profile__statCount {
+  font-weight: 500;
+  font-size: large;
+}
+
+.profile__bio {
+  padding: 10px;
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-real-name {
+  margin-bottom: 5px;
+  font-size: large;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 93.5rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -1rem -1rem;
+  padding-bottom: 3rem;
+}
+
+.gallery-item {
+  position: relative;
+  flex: 1 0 22rem;
+  margin: 1rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.gallery-item:hover .gallery-item-info,
+.gallery-item:focus .gallery-item-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.gallery-item-info {
+  display: none;
+}
+
+.gallery-item-info li {
+  display: inline-block;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.gallery-item-likes {
+  margin-right: 2.2rem;
+}
+
+.gallery-item-type {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2.5rem;
+  text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.1);
+}
+
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@supports (display: grid) {
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+
+  .gallery-item,
+  .gallery {
+    width: auto;
+    margin: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .profile {
+    max-width: 500px;
+  }
+
+  .profile__header {
+    max-width: 500px;
+    margin-left: 0px;
+    margin-right: 0px;
+    display: flex;
+  }
+
+  .profile__headerLeft {
+    flex: 0.1;
+  }
+
+  .profile__headerRight {
+    flex: 0.5;
+    /* background-color: aqua; */
+    max-width: 500px;
+  }
+
+  .profile__headerLeft {
+    border-radius: 999px;
+    height: max-content;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .profile__headerLeftAvatar {
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    border-radius: 999rem;
+  }
+
+  .profile__headerRight {
+    flex: 1;
+    margin-left: 20px;
+    padding: 20px;
+  }
+
+  .profile__settings {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+  }
+
+  .profile__settingsUserName {
+    padding: 10px;
+    font-size: xx-large;
+  }
+  .profile-edit-btn {
+    margin-right: 20px;
+    font-size: 0.8rem;
+    line-height: 1.8;
+    border: 0.1rem solid #dbdbdb;
+    border-radius: 0.3rem;
+    width: 150px;
+    height: 30px;
+  }
+
+  .profile-edit-btn :hover {
+    cursor: pointer;
+  }
+
+  .profile-settings-btn {
+    font-size: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    display: none;
+  }
+
+  .container {
+    /* background-color: gray; */
+    max-width: 500px;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    /* grid-gap: 2rem; */
+  }
+
+  .gallery-item,
+  .gallery {
+    width: auto;
+    margin: 0;
+  }
+}

@@ -1,0 +1,22 @@
+.accountEdit {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  margin-top: 10px;
+  /* background-color: aqua; */
+  margin-left: 20px;
+  margin-right: 20px;
+  border: 1px solid gray;
+  background-color: aqua;
+  height: 50vh;
+}
+/* 
+.accountEdit_Left {
+  flex: 0.2;
+  background-color: beige;
+}
+
+.accountEdit_Right {
+  flex: 0.45;
+  background-color: aquamarine;
+} */

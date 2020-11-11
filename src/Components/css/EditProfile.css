@@ -1,0 +1,67 @@
+.editProfile {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+  width: 80%;
+}
+
+.editProfile__header {
+  display: flex;
+  flex-direction: row;
+  /* background-color: beige; */
+}
+.header__imageDiv {
+  /* border: 1px solid black; */
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.header__image {
+  width: 50px;
+
+  border-radius: 999px;
+}
+
+.header__details {
+  margin-left: 10px;
+  /* padding: 10px; */
+}
+
+.fieldTable {
+  margin-top: 0px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.fieldName {
+  padding: 10px;
+  font-weight: bold;
+  text-align: right;
+}
+
+.inputField {
+  padding: 10px;
+  margin: 10px;
+  font-weight: bold;
+  text-align: left;
+  width: 80%;
+}
+
+.fieldText {
+  padding: 20px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.fieldPersonalInfo {
+  font-size: large;
+  font-weight: 700;
+  text-align: center;
+}
+
+.submitButton {
+  margin-right: "auto";
+  margin-left: "auto";
+  text-align: center;
+}

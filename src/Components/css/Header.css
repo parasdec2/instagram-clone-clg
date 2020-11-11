@@ -1,0 +1,104 @@
+.header {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: aqua;
+}
+
+.header__container {
+  background-color: white;
+  /* padding: 10px; */
+  border-bottom: 1px solid lightgray;
+  object-fit: contain;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  position: sticky;
+  top: 0;
+  max-height: 40px;
+  z-index: 1;
+}
+
+.header__imageDiv {
+  display: flex;
+  flex: 1;
+  height: 30px;
+  /* background-color: aqua; */
+}
+.header__image {
+  /* background-color: goldenrod; */
+  margin-left: auto;
+  margin-right: auto;
+  flex: 0.2;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.header__search {
+  display: flex;
+  flex: 0.33;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__searchContainer {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid lightgray;
+  max-width: 200px;
+  height: 25px;
+}
+
+.header__searchContainer > input {
+  outline-width: 0;
+  border: none;
+  width: 100px;
+  text-align: center;
+}
+
+.header__func {
+  display: flex;
+  flex: 1;
+  margin-left: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__funcIcon {
+  padding: 10px;
+  cursor: pointer;
+  color: black;
+}
+
+.header__funcIconAvatar {
+  border: none;
+}
+
+.header__funcIcon :visited {
+  text-decoration: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.header__loginContainer {
+  flex: 0;
+}
+
+.app__signup {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 500px) {
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header__image {
+    margin-left: 5px;
+  }
+  .header__search {
+    display: none;
+  }
+}
