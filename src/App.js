@@ -18,7 +18,6 @@ import SavedPosts from "./Components/SavedPosts";
 import AccountEdit from "./Components/AccountEdit";
 import EmailVerification from "./Components/EmailVerification";
 import PasswordReset from "./Components/PasswordReset";
-import DirectMessages from "./DirectMessages/DirectMessages";
 
 function App() {
   const [{ user }, dispatch] = useStateValue();
